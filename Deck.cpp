@@ -21,7 +21,7 @@ namespace BlackJack {
     }
 
     Deck::~Deck() {
-        // put code here to delete each card in cardDeck ???
+        // ---
     }
 
     // constructor to set up the deck
@@ -40,6 +40,12 @@ namespace BlackJack {
                 }
             }
         }
+        // shuffle the deck
+        shuffleDeck();
+    }
+
+    // shuffle the deck
+    void Deck::shuffleDeck() {
         // shuffle the deck
         random_shuffle(cardDeck.begin(), cardDeck.end());
     }
